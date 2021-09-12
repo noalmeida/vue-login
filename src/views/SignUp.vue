@@ -1,7 +1,7 @@
 <template>
   <div class="login">
     <div class="container-outher">
-      <h1 class="paragraph">Entrar</h1>
+      <h1 class="paragraph">Crie uma nova conta</h1>
       <span class="container-login">
         <input class="form-control" type="email" placeholder="Login"
       /></span>
@@ -11,47 +11,23 @@
 
       <br />
       <div class="b-login">
-        <button type="button" class="btn btn-primary btn-lg" @click="login">
-          Login
-        </button>
+        <button type="button" class="btn btn-primary btn-lg">Registrar</button>
       </div>
-      <p>
-        Você não possui conta?
-        <router-link to="/registrar">Crie uma conta</router-link>
-      </p>
+      <span>Ou Retorne ao <router-link to="/login">Login</router-link></span>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: "login",
+  name: "sign-in",
   data() {
     return {};
   },
-  methods: {
-    login: function () {
-      this.$router.replace("home");
-    },
-  },
+  methods: {},
 };
 </script>
-
 <style scoped>
-@font-face {
-  font-family: Poppins-Regular;
-  src: url("../assets/Fonts/poppins/Poppins-Regular.ttf");
-}
-
-@font-face {
-  font-family: Poppins-Bold;
-  src: url("../assets/Fonts/poppins/Poppins-Bold.ttf");
-}
-
-@font-face {
-  font-family: Poppins-Medium;
-  src: url("../assets/Fonts/poppins/Poppins-Medium.ttf");
-}
 .paragraph {
   font-family: Poppins-Medium;
   font-size: 22px;
